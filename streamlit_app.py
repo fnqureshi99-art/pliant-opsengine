@@ -1,6 +1,6 @@
 import streamlit as st
-	import time
-	import pandas as pd
+import time
+import pandas as pd
 	
 	# --- PLIANT BRANDING CONFIG ---
 	st.set_page_config(
