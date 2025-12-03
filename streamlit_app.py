@@ -1,5 +1,4 @@
-
-	import streamlit as st
+import streamlit as st
 	import time
 	import pandas as pd
 	
@@ -61,7 +60,7 @@
 	    st.caption("v2.1 | Architect: Fardan Qureshi")
 	
 	# --- MAIN INTERFACE ---
-	st.title("💳 Pliant OpsEne")
+	st.title("💳 Pliant OpsEngine")
 	st.markdown("**Autonomous Triage & Risk Automation Protocol**")
 	
 	col1, col2 = st.columns([1, 1.2])
@@ -153,13 +152,7 @@
 	            if risk_decision == "APPROVED":
 	                st.success("🚀 **ACTION: LIMIT INCREASED (API v2)**")
 	                st.markdown("**Drafted Reply (Sent):**")
-	                st.info(f"Hi there,
-
-Good news! I've instantly approved your limit increase to €{requested_amount:,} based on your healthy cash balance.
-
-Your ads should be running again. Let us know if you need anything else!
-
-*OpsEngine AI*")
+	                st.info(f"Hi there,\n\nGood news! I've instantly approved your limit increase to €{requested_amount:,} based on your healthy cash balance.\n\nYour ads should be running again. Let us know if you need anything else!\n\n*OpsEngine AI*")
 	                
 	            elif risk_decision == "REJECTED":
 	                st.error("✋ **ACTION: ROUTED TO CREDIT ANALYST**")
@@ -169,11 +162,7 @@ Your ads should be running again. Let us know if you need anything else!
 	            elif risk_decision == "ESCALATE_AML":
 	                st.error("👮 **ACTION: ACCOUNT FROZEN & ROUTED TO COMPLIANCE**")
 	                st.markdown("**Drafted Reply:**")
-	                st.info("Hi,
-
-Your transaction is currently under security review. Our Compliance Team will reach out within 2 hours.
-
-*Pliant Security*")
+	                st.info("Hi,\n\nYour transaction is currently under security review. Our Compliance Team will reach out within 2 hours.\n\n*Pliant Security*")
 	
 	    else:
 	        st.info("Waiting for ticket stream...")
